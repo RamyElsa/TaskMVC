@@ -1,0 +1,14 @@
+D:\V.StudioCode\AppTask\AppTaskModels\bin\Debug\net7.0\AppTaskModels.deps.json
+D:\V.StudioCode\AppTask\AppTaskModels\bin\Debug\net7.0\AppTaskModels.runtimeconfig.json
+D:\V.StudioCode\AppTask\AppTaskModels\bin\Debug\net7.0\AppTaskModels.dll
+D:\V.StudioCode\AppTask\AppTaskModels\bin\Debug\net7.0\AppTaskModels.pdb
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\AppTaskModels.csproj.AssemblyReference.cache
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\AppTaskModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\AppTaskModels.AssemblyInfoInputs.cache
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\AppTaskModels.AssemblyInfo.cs
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\AppTaskModels.csproj.CoreCompileInputs.cache
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\AppTaskModels.dll
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\refint\AppTaskModels.dll
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\AppTaskModels.pdb
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\AppTaskModels.genruntimeconfig.cache
+D:\V.StudioCode\AppTask\AppTaskModels\obj\Debug\net7.0\ref\AppTaskModels.dll

@@ -1,0 +1,50 @@
+﻿@model TaskStudents
+@{
+    ViewData["Title"] = "Update Student";
+}
+
+<div class="container">
+    <form class="form-group" method="post" asp-action="Update">
+        <h2 class="pb-10">Update  Student </h2>
+
+        <div class="input-container">
+            <label asp-for="Name" class="col-form-label">StudentName</label>
+            <input type="text" class="form-control" asp-for="Name">
+            <span asp-validation-for="Name"> </span>
+        </div>
+        <div class="input-container">
+            <label asp-for="Address" class="col-form-label">Address</label>
+            <input type="text" class="form-control" asp-for="Address">
+            <span asp-validation-for="Address"> </span>
+        </div>
+        <div class="input-container">
+            <label asp-for="City" class="col-form-label">City</label>
+            <input type="text" class="form-control" asp-for="City">
+            <span asp-validation-for="City"> </span>
+        </div>
+        <div class="input-container">
+            <label asp-for="Phone" class="col-form-label">Phone</label>
+            <input type="text" class="form-control" asp-for="Phone">
+            <span asp-validation-for="Phone"> </span>
+        </div>
+
+        <div class="input-container">
+            <label asp-for="Age" class="col-form-label">Age</label>
+            <input type="text" class="form-control" asp-for="Age">
+            <span asp-validation-for="Age"> </span>
+        </div>
+
+        @if (TempData["msg"] != null)
+        {
+            <div class="alert mb-1">
+                @TempData["msg"]
+            </div>
+        }
+
+        <div class="input-container">
+            <button class="btn btn-primary" type="submit">Update Student</button>
+            <a class="btn btn-info" href="/Student/StudentList">All Student</a>
+        </div>
+    </form>
+</div>
+

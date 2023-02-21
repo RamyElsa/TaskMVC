@@ -1,0 +1,44 @@
+﻿@model ApptaskData.ViewModels.NewTaskVM
+@{
+    ViewData["Title"] = "Update Task";
+}
+
+<div class="container">
+    <form class="form-group" method="post" asp-action="Edit">
+        <h2 class="pb-10">Update Task </h2>
+        <input type="hidden" class="form-control" asp-for="Id">
+
+
+        <div class="input-container">
+            <label asp-for="Description" class="col-form-label">Description</label>
+            <input type="text" class="form-control" asp-for="Description">
+            <span asp-validation-for="Description"> </span>
+        </div>
+
+        <div class="input-container">
+            <label asp-for="Period" class="col-form-label">Period</label>
+            <input type="text" class="form-control" asp-for="Period">
+            <span asp-validation-for="Period"> </span>
+        </div>
+
+        <div class="input-container">
+            <label asp-for="TeacherName" class="col-form-label">Teacher Name</label>
+            <input type="text" class="form-control" asp-for="TeacherName">
+            <span asp-validation-for="TeacherName"> </span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="StudentId" class="control-label">Student</label>
+            <select asp-for="StudentId" class="form-control" asp-items="ViewBag.Students"></select>
+            <span asp-validation-for="StudentId" class="text-danger"></span>
+        </div>
+
+
+        <div class="input-container">
+            <button class="btn btn-primary" type="submit">Update Task</button>
+            <a class="btn btn-info" href="/TaskMVC/TaskList">All Tasks</a>
+        </div>
+
+    </form>
+</div>
+

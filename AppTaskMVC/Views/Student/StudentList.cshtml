@@ -1,0 +1,69 @@
+﻿@model IEnumerable<TaskStudents>
+@{
+    ViewData["Title"] = "Student Of List";
+}
+
+<div class="col-6">
+    <h2 class="text-primary">List Of Students</h2>
+</div>
+
+<div class="col-6 text-end">
+    <a class="btn btn-primary" asp-action="Create" asp-controller="Student"><i class="bi bi-plus-circle"></i>&nbsp;Create New Student</a>
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                StudentName
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                City
+            </th>
+
+            <th>
+                Phone
+            </th>
+
+            <th>
+                Age
+            </th>
+
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Address
+                </td>
+                <td>
+                    @item.City
+                </td>
+                <td>
+                    @item.Phone
+                </td>
+                <td>
+                    @item.Age
+                </td>
+
+
+
+                <td>
+                    <a class="btn btn-success" href="/Student/Edit?id=@item.Id"><i class="bi bi-pen"></i></a> |
+                    <a class="btn btn-danger" onclick="return window.confirm('Are you sure?')" href="/Student/Delete?id=@item.Id"><i class="bi bi-trash"></i></a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
